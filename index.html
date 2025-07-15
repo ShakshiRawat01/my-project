@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portal-box {
+      background: #fff;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 350px;
+    }
+
+    .portal-box h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .portal-btn {
+      display: block;
+      width: 100%;
+      padding: 15px 0;
+      margin: 15px 0;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      background: #6c63ff;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .portal-btn:hover {
+      background: #574fd6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portal-box">
+    <h1>Welcome to the Portal</h1>
+    <button class="portal-btn" onclick="goToUser()">User Login</button>
+    <button class="portal-btn" onclick="goToAdmin()">Admin Login</button>
+  </div>
+
+  <script>
+    function goToUser() {
+      alert("Redirecting to User page...");
+      // window.location.href = "user.html";
+    }
+
+    function goToAdmin() {
+      alert("Redirecting to Admin page...");
+      // window.location.href = "admin.html";
+    }
+  </script>
+
+</body>
+</html>
